@@ -27,7 +27,7 @@ class RestClient
      * @var array
      */
     protected static $defaultParams = [];
-    protected $customParams = [];
+    protected $customParams = ['use_ssl' => 'false'];
 
     /**
      * RestClient constructor.
