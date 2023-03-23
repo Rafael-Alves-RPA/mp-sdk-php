@@ -14,7 +14,7 @@ use MercadoPago\Annotation\Attribute;
 
 class PaymentMethod extends Entity
 {
-    /**
+        /**
      * id
      * @Attribute(primaryKey = true)
      * @var string
@@ -111,4 +111,18 @@ class PaymentMethod extends Entity
      * @var array
      */
     protected $processing_modes;
+
+    /**
+    * excluded_payment_methods
+    * @Attribute(type = "array")
+    * @var array
+    */
+    public $excluded_payment_methods;
+
+    /**
+    * excluded_payment_types
+    * @Attribute(type = "array")
+    * @var array
+    */
+    public $excluded_payment_types;
 }

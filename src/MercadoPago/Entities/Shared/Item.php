@@ -17,14 +17,14 @@ class Item extends Entity
      * @Attribute(type = "string")
      * @var string
      */
-    protected $id;
+    public $id;
 
     /**
      * title
      * @Attribute(type = "string")
      * @var string
      */
-    protected $title;
+    public $title;
 
     /**
      * description
@@ -59,7 +59,7 @@ class Item extends Entity
      * @Attribute(type = "int")
      * @var int
      */
-    protected $quantity;
+    public $quantity;
 
     /**
      * unit_price
@@ -67,5 +67,9 @@ class Item extends Entity
      * @var float
      */
     protected $unit_price;
+
+    public function setUnitPrice($unit_price){
+        $this->unit_price = (float)$unit_price;
+    }
 
 }

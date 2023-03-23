@@ -22,21 +22,21 @@ class Preference extends Entity
      * @Attribute(primaryKey = true, type = "string", readOnly = true)
      * @var string
      */
-    protected $id;
+    public $id;
 
     /**
      * auto_return
      * @Attribute()
      * @var string
      */
-    protected $auto_return;
+    public $auto_return;
 
     /**
      * back_urls
-     * @Attribute()
-     * @var object
+     * @Attribute(type = "")
+     * @var array
      */
-    protected $back_urls;
+    public $back_urls;
 
     /**
      * notification_url
@@ -149,21 +149,21 @@ class Preference extends Entity
      * @Attribute()
      * @var object
      */
-    protected $payment_methods;
+    public $payment_methods;
 
     /**
      * items
      * @Attribute(type = "array", required = "true")
      * @var array
      */
-    protected $items;
+    public $items;
 
     /**
      * payer
      * @Attribute(type = "object")
      * @var object
      */
-    protected $payer;
+    public $payer;
 
     /**
      * shipments
