@@ -78,7 +78,7 @@ class Preference extends Entity
      * @Attribute(type = "string")
      * @var string
      */
-    protected $external_reference;
+    public $external_reference;
 
     /**
      * expires
@@ -212,7 +212,7 @@ class Preference extends Entity
      * @var string
      * @Attribute()
      */
-    protected $statement_descriptor;
+    public $statement_descriptor;
 
     /**
      * metadata

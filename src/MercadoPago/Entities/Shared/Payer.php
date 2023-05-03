@@ -45,7 +45,7 @@ class Payer extends Entity
      * @Attribute(type = "string")
      * @var string
      */  
-    protected $surname;
+    public $surname;
 
     /**
      * first_name
@@ -80,14 +80,14 @@ class Payer extends Entity
      * @Attribute()
      * @var object
      */
-    protected $phone;
+    public $phone;
 
     /**
      * identification
      * @Attribute()
      * @var object
      */
-    protected $identification;
+    public $identification;
 
     /**
      * address

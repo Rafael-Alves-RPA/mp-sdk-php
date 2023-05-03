@@ -52,7 +52,7 @@ class Item extends Entity
      * @Attribute(type = "string")
      * @var string
      */
-    protected $currency_id;
+    public $currency_id;
 
     /**
      * quantity
