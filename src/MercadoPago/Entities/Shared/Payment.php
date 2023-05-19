@@ -434,7 +434,7 @@ class Payment extends Entity
      * @var int
      * @Attribute(type = "int")
      */
-    protected $installments;
+    public $installments;
 
     /**
      * token

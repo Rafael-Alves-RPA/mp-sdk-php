@@ -125,4 +125,11 @@ class PaymentMethod extends Entity
     * @var array
     */
     public $excluded_payment_types;
+
+    /**
+     * installments
+     * @var int
+     * @Attribute(type = "int")
+     */
+    public $installments;
 }
